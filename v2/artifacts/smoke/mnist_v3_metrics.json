@@ -1,0 +1,35 @@
+{
+  "config": {
+    "mnist_root": "/Users/baptistecaillerie/Documents/Cortical Column/Corical column code/data/MNIST/raw",
+    "output_dir": "artifacts/smoke",
+    "train_limit": 64,
+    "test_limit": 32,
+    "epochs": 1,
+    "batch_size": 8,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "n_mc": 16,
+    "k": 4,
+    "hidden_dim": 32,
+    "scan_steps": 2,
+    "dt": 0.1,
+    "seed": 0,
+    "local_column_learning": false
+  },
+  "best": {
+    "epoch": 1,
+    "train_loss": 2.2965058386325836,
+    "train_accuracy": 0.109375,
+    "test_loss": 2.293824017047882,
+    "test_accuracy": 0.15625
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.2965058386325836,
+      "train_accuracy": 0.109375,
+      "test_loss": 2.293824017047882,
+      "test_accuracy": 0.15625
+    }
+  ]
+}

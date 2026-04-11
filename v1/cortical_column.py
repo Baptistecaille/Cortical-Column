@@ -7,12 +7,20 @@ import torch
 import torch.nn as nn
 from typing import List, Optional
 
-from .sdr_space import SDRSpace
-from .spatial_pooler import SpatialPooler
-from .layer6b import Layer6bTransformer
-from .grid_cells import GridCellNetwork
-from .displacement import DisplacementAlgebra
-from .consensus import MultiColumnConsensus
+try:
+    from .sdr_space import SDRSpace
+    from .spatial_pooler import SpatialPooler
+    from .layer6b import Layer6bTransformer
+    from .grid_cells import GridCellNetwork
+    from .displacement import DisplacementAlgebra
+    from .consensus import MultiColumnConsensus
+except ImportError:
+    from sdr_space import SDRSpace
+    from spatial_pooler import SpatialPooler
+    from layer6b import Layer6bTransformer
+    from grid_cells import GridCellNetwork
+    from displacement import DisplacementAlgebra
+    from consensus import MultiColumnConsensus
 
 
 class CorticalColumn(nn.Module):
